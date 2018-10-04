@@ -4,7 +4,6 @@ exports.seed = function(knex, Promise) {
     .then(function() {
       return knex('games').insert([
         {
-          id: 1,
           dateCreated: '2018-09-11T14:07:46+00:00',
           name: 'God of War',
           image: 'https://howlongtobeat.com/gameimages/38050_God_of_War.jpg',
@@ -15,7 +14,6 @@ exports.seed = function(knex, Promise) {
           isComplete: false,
         },
         {
-          id: 2,
           dateCreated: '2018-09-11T14:07:46+00:00',
           name: 'Octopath Traveler',
           image: 'https://howlongtobeat.com/gameimages/53592_Octopath_Traveler.png',
@@ -26,7 +24,6 @@ exports.seed = function(knex, Promise) {
           isComplete: false,
         },
         {
-          id: 3,
           dateCreated: '2018-09-11T14:07:46+00:00',
           name: 'Dragon Quest XI: Echoes of an Elusive Age',
           image:
@@ -38,7 +35,6 @@ exports.seed = function(knex, Promise) {
           isComplete: false,
         },
         {
-          id: 4,
           dateCreated: '2018-09-11T14:07:46+00:00',
           name: 'Fire Emblem: Fates - Conquest',
           image: 'https://howlongtobeat.com/gameimages/28381_Fire_Emblem_Fates_-_Conquest.jpg',
@@ -49,7 +45,6 @@ exports.seed = function(knex, Promise) {
           isComplete: false,
         },
         {
-          id: 5,
           dateCreated: '2018-09-11T14:07:46+00:00',
           name: 'Bayonetta 2',
           image: 'https://howlongtobeat.com/gameimages/250px-Bayonetta_2.jpg',
@@ -60,7 +55,6 @@ exports.seed = function(knex, Promise) {
           isComplete: false,
         },
         {
-          id: 6,
           dateCreated: '2018-09-11T14:07:46+00:00',
           name: "Marvel's Spider-Man",
           image: 'https://howlongtobeat.com/gameimages/44852_Spider-Man_(2017).jpg',
@@ -71,7 +65,6 @@ exports.seed = function(knex, Promise) {
           isComplete: false,
         },
         {
-          id: 7,
           dateCreated: '2018-10-04T00:00:00+00:00',
           name: 'Mega Man 11',
           image: 'https://howlongtobeat.com/gameimages/51164_Mega_Man_11.png',
@@ -82,7 +75,6 @@ exports.seed = function(knex, Promise) {
           isComplete: false,
         },
         {
-          id: 8,
           dateCreated: '2018-09-11T14:07:46+00:00',
           name: 'The Legend of Zelda: Breath of the Wild',
           image:
@@ -94,7 +86,6 @@ exports.seed = function(knex, Promise) {
           isComplete: true,
         },
         {
-          id: 9,
           dateCreated: '2018-09-11T14:07:46+00:00',
           name: 'Super Mario Odyssey',
           image: 'https://howlongtobeat.com/gameimages/42833_Super_Mario_Odyssey.jpg',
@@ -112,7 +103,6 @@ exports.seed = function(knex, Promise) {
           priority: 8,
           numberOfHoursPlayed: 0,
           dateCreated: '2018-09-27T18:07:01.124Z',
-          id: 10,
           isComplete: false,
         },
         {
@@ -123,7 +113,6 @@ exports.seed = function(knex, Promise) {
           priority: 10,
           dateCreated: '2018-09-27T18:08:02.997Z',
           numberOfHoursPlayed: 0,
-          id: 11,
           isComplete: false,
         },
         {
@@ -134,7 +123,6 @@ exports.seed = function(knex, Promise) {
           priority: 10,
           dateCreated: '2018-09-27T23:03:23.742Z',
           numberOfHoursPlayed: 25,
-          id: 12,
           isComplete: true,
         },
         {
@@ -145,7 +133,6 @@ exports.seed = function(knex, Promise) {
           priority: 5,
           dateCreated: '2018-09-27T23:54:45.456Z',
           numberOfHoursPlayed: 40,
-          id: 13,
           isComplete: false,
         },
         {
@@ -156,7 +143,6 @@ exports.seed = function(knex, Promise) {
           priority: 8,
           dateCreated: '2018-09-28T03:21:00.437Z',
           numberOfHoursPlayed: 0,
-          id: 14,
           isComplete: false,
         },
       ]);
