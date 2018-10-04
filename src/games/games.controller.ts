@@ -1,8 +1,14 @@
 import { Context } from 'koa';
 
+import { gamesRepository } from './games.repository';
+
 export const gamesController = {
   getAllGames: async (context: Context) => {
-    context.body = 'get games';
+    try {
+      context.body = await gamesRepository.getAllGames();
+    } catch (error) {
+      console.log(error);
+    }
   },
 
   getGame: async (context: Context) => {
@@ -17,4 +23,3 @@ export const gamesController = {
     context.body = 'delete game';
   },
 };
-

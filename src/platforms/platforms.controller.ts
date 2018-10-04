@@ -1,7 +1,13 @@
 import { Context } from 'koa';
 
+import { platformsRepository } from './platforms.repository';
+
 export const platformsController = {
   getAllPlatforms: async (context: Context) => {
-    context.body = 'all platforms';
+    try {
+      context.body = await platformsRepository.getAllPlatforms();
+    } catch (error) {
+      console.log(error);
+    }
   },
 };

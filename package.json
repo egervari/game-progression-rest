@@ -7,14 +7,21 @@
   "scripts": {
     "serve": "nodemon ./src/server.ts",
     "lint": "tslint --project ./tsconfig.json --fix",
-    "pretty:check": "prettier --list-different 'src/**/*.{ts,json,md}'",
-    "pretty:fix": "prettier --write 'src/**/*.{ts,json,md}'"
+    "pretty:check": "prettier --list-different \"**/*.{ts,js}\"",
+    "pretty:fix": "prettier --write \"**/*.{ts,js}\"",
+    "fix": "npm run pretty:fix && npm run lint",
+    "knex:migrate": "knex migrate:latest",
+    "knex:seed": "knex seed:run"
   },
   "dependencies": {
+    "knex": "^0.15.2",
     "koa": "^2.5.3",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "pg": "^7.5.0",
+    "sqlite3": "^4.0.2"
   },
   "devDependencies": {
+    "@types/knex": "^0.14.25",
     "@types/koa": "^2.0.46",
     "@types/koa-router": "^7.0.32",
     "nodemon": "^1.18.4",
