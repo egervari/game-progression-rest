@@ -1,0 +1,27 @@
+{
+  "name": "game-progression-rest",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 8"
+  },
+  "scripts": {
+    "serve": "nodemon ./src/server.ts",
+    "lint": "tslint --project ./tsconfig.json --fix",
+    "pretty:check": "prettier --list-different 'src/**/*.{ts,json,md}'",
+    "pretty:fix": "prettier --write 'src/**/*.{ts,json,md}'"
+  },
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.46",
+    "@types/koa-router": "^7.0.32",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.3",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.1.1"
+  }
+}
