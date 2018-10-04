@@ -7,11 +7,17 @@ export const profileController = {
     try {
       context.body = await profileRepository.getProfile();
     } catch (error) {
-      console.log(error);
+      context.status = 500;
     }
   },
 
   updateProfile: async (context: Context) => {
-    context.body = 'update profile';
+    try {
+      context.body = await profileRepository
+        .updateProfile((context.request as any).body)
+        .then(() => profileRepository.getProfile());
+    } catch (error) {
+      context.status = 500;
+    }
   },
 };

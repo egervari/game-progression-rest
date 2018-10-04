@@ -1,10 +1,7 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('games', table => {
-    table.increments();
-    table
-      .string('name')
-      .notNullable()
-      .unique();
+    table.increments('id');
+    table.string('name').notNullable();
     table.string('image').notNullable();
     table.integer('platformId').notNullable();
     table.double('numberOfHoursPlayed').notNullable();

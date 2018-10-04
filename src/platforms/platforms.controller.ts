@@ -7,7 +7,7 @@ export const platformsController = {
     try {
       context.body = await platformsRepository.getAllPlatforms();
     } catch (error) {
-      console.log(error);
+      context.status = 500;
     }
   },
 };

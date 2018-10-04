@@ -7,7 +7,7 @@ export const languagesController = {
     try {
       context.body = await languagesRepository.getAllLanguages();
     } catch (error) {
-      console.log(error);
+      context.status = 500;
     }
   },
 };

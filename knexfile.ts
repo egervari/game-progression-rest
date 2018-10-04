@@ -3,7 +3,7 @@ import * as path from 'path';
 const BasePath = path.join(__dirname, 'db');
 
 module.exports = {
-  client: 'postgresql',
+  client: 'pg',
   connection: {
     database: 'game_progression_staging',
     user: 'postgres',

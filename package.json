@@ -14,8 +14,10 @@
     "knex:seed": "knex seed:run"
   },
   "dependencies": {
+    "@koa/cors": "^2.2.2",
     "knex": "^0.15.2",
     "koa": "^2.5.3",
+    "koa-body": "^4.0.4",
     "koa-router": "^7.4.0",
     "pg": "^7.5.0",
     "sqlite3": "^4.0.2"
